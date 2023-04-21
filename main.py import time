@@ -1,0 +1,7 @@
+#This code is used to measure how long a specific operation takes to complete.
+import time
+
+start_time = time.time()
+# operation of interest
+end_time = time.time()
+elapsed_time = end_time - start_time
