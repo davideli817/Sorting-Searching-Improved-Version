@@ -1,0 +1,17 @@
+#The first part of the code defines a function called insertion_sort that takes an array (arr) as input and performs an insertion sort algorithm on it.
+def insertion_sort(arr):
+    for i in range(1, len(arr)):
+        key = arr[i]
+        j = i - 1
+        while j >= 0 and key < arr[j]:
+            arr[j + 1] = arr[j]
+            j -= 1
+        arr[j + 1] = key
+
+def my_comparison(obj):
+    return obj.attr1
+
+arr = [MyClass(attr1, attr2) for i in range(75000)]
+insertion_sort(arr, key=my_comparison)
+
+#the insertion_sort function is called on the arr array, with my_comparison function as the key argument. This means that the my_comparison function will be used to determine the ordering of the elements in the arr array during the sorting process.
